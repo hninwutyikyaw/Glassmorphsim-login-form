@@ -1,0 +1,160 @@
+*{
+    padding:0; margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color:  #080710;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background .shape {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.shape:first-child {
+    right: 0;
+    top: -15%;
+    left: -18%;
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+}
+
+.shape:last-child {
+    right: 0;
+    bottom: -15%;
+    right: -12%;
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+}
+
+form {
+    width: 420px;
+    height: 560px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    padding: 50px 30px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus {
+	border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #1845ad, #f09819) 1;    
+}
+
+input, select, textarea{
+    color: #fff;
+    font-weight: 400;
+}
+
+::placeholder{
+    color: #e5e5e5;
+}
+
+button {
+    margin: 50px 0;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    user-select: none;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #1845ad 0%, #79CBCA  51%, #f09819  100%);
+    
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.social {
+    display: flex;
+}
+
+.go, .fb {
+    width: 50%;
+    height: 50px;
+    background-color: rgba(255,255,255,0.27);
+    padding: 10px 14px;
+    margin: 0px 5px;
+    border-radius: 3px;
+    text-align: center;
+    user-select: none;
+}
+
+.go:hover, .fb:hover {
+    background-color: rgba(255,255,255,0.47);
+    transition: 0.5s all;
+}
